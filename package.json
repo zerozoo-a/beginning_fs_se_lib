@@ -1,7 +1,6 @@
 {
   "name": "make-some-lib",
   "type": "module",
-  "packageManager": "yarn@3.2.1",
   "scripts": {
     "babel": "./node_modules/.bin/babel src --out-dir lib",
     "test": "jest"

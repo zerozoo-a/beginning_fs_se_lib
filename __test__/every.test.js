@@ -1,4 +1,4 @@
-import { every } from "../lib/every";
+import { every } from "../src/every";
 
 test("every take array and callback fn then define every element of array is true or false", () => {
   const testArray = [0, 1];

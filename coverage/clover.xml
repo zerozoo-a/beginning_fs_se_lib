@@ -1,62 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664039937975" clover="3.2.0">
-  <project timestamp="1664039937975" name="All files">
-    <metrics statements="35" coveredstatements="35" conditionals="18" coveredconditionals="14" methods="9" coveredmethods="9" elements="62" coveredelements="58" complexity="0" loc="35" ncloc="35" packages="1" files="7" classes="7"/>
-    <file name="every.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/every.js">
-      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="21" count="1" type="stmt"/>
-    </file>
-    <file name="forEach.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/forEach.js">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="12" count="2" type="stmt"/>
-    </file>
-    <file name="forEachObject.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/forEachObject.js">
-      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="10" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="11" count="2" type="stmt"/>
-    </file>
-    <file name="once.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/once.js">
-      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="17" count="2" type="cond" truecount="2" falsecount="0"/>
-    </file>
-    <file name="times.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/times.js">
-      <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="9" count="1" type="cond" truecount="3" falsecount="1"/>
-      <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="13" count="2" type="stmt"/>
-    </file>
-    <file name="unary.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/unary.js">
-      <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="19" count="2" type="cond" truecount="3" falsecount="1"/>
-    </file>
-    <file name="unless.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/unless.js">
+<coverage generated="1664043440530" clover="3.2.0">
+  <project timestamp="1664043440530" name="All files">
+    <metrics statements="32" coveredstatements="32" conditionals="18" coveredconditionals="14" methods="9" coveredmethods="9" elements="59" coveredelements="55" complexity="0" loc="32" ncloc="32" packages="2" files="7" classes="7"/>
+    <package name="lib">
+      <metrics statements="28" coveredstatements="28" conditionals="16" coveredconditionals="12" methods="8" coveredmethods="8"/>
+      <file name="forEach.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/forEach.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+      </file>
+      <file name="forEachObject.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/forEachObject.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="2" type="stmt"/>
+      </file>
+      <file name="once.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/once.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="2" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="times.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/times.js">
+        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+      <file name="unary.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/unary.js">
+        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="19" count="2" type="cond" truecount="3" falsecount="1"/>
+      </file>
+      <file name="unless.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/unless.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src">
       <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="1" type="stmt"/>
-    </file>
+      <file name="every.js" path="/Users/zoo/codes/js-fs/make-some-lib/src/every.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

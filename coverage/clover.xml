@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664000874014" clover="3.2.0">
-  <project timestamp="1664000874014" name="All files">
+<coverage generated="1664001135312" clover="3.2.0">
+  <project timestamp="1664001135313" name="All files">
     <metrics statements="30" coveredstatements="30" conditionals="16" coveredconditionals="12" methods="7" coveredmethods="7" elements="53" coveredelements="49" complexity="0" loc="30" ncloc="30" packages="1" files="6" classes="6"/>
     <file name="every.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/every.js">
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>

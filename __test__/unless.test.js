@@ -1,4 +1,4 @@
-import { unless } from "../src/unless";
+import { unless } from "../lib/unless";
 
 test("unless function will execute callback function when predicate is false", () => {
   const fn = jest.fn().mockImplementation(() => "good for you!");

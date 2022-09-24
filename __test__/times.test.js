@@ -1,4 +1,4 @@
-import { times } from "../src/times";
+import { times } from "../lib/times";
 
 test("times run callback function n times", () => {
   const callback = jest.fn();

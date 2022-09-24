@@ -1,6 +1,5 @@
 {
   "name": "make-some-lib",
-  "type": "module",
   "scripts": {
     "babel": "./node_modules/.bin/babel src --out-dir lib",
     "test": "jest"

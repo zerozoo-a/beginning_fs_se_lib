@@ -1,4 +1,4 @@
-import { forEach } from "../src/forEach";
+import { forEach } from "../lib/forEach";
 
 test("forEach run callback function n times", () => {
   const fn = jest.fn();

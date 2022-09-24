@@ -1,4 +1,4 @@
-import { forEachObject } from "../src/forEachObject";
+import { forEachObject } from "../lib/forEachObject";
 
 test("HOC_forEachObject run n times", () => {
   const fn = jest.fn();

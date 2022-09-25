@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664095281124" clover="3.2.0">
-  <project timestamp="1664095281124" name="All files">
-    <metrics statements="39" coveredstatements="39" conditionals="18" coveredconditionals="14" methods="10" coveredmethods="10" elements="67" coveredelements="63" complexity="0" loc="39" ncloc="39" packages="2" files="8" classes="8"/>
+<coverage generated="1664096698230" clover="3.2.0">
+  <project timestamp="1664096698230" name="All files">
+    <metrics statements="43" coveredstatements="43" conditionals="18" coveredconditionals="14" methods="11" coveredmethods="11" elements="72" coveredelements="68" complexity="0" loc="43" ncloc="43" packages="2" files="9" classes="9"/>
     <package name="lib">
       <metrics statements="28" coveredstatements="28" conditionals="16" coveredconditionals="12" methods="8" coveredmethods="8"/>
       <file name="forEach.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/forEach.js">
@@ -52,13 +52,20 @@
       </file>
     </package>
     <package name="src">
-      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="every.js" path="/Users/zoo/codes/js-fs/make-some-lib/src/every.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="map.js" path="/Users/zoo/codes/js-fs/make-some-lib/src/map.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
       </file>
       <file name="objectAssign.js" path="/Users/zoo/codes/js-fs/make-some-lib/src/objectAssign.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

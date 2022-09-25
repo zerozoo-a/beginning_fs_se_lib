@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664109903127" clover="3.2.0">
-  <project timestamp="1664109903127" name="All files">
-    <metrics statements="66" coveredstatements="63" conditionals="31" coveredconditionals="24" methods="16" coveredmethods="16" elements="113" coveredelements="103" complexity="0" loc="66" ncloc="66" packages="2" files="13" classes="13"/>
+<coverage generated="1664112950273" clover="3.2.0">
+  <project timestamp="1664112950273" name="All files">
+    <metrics statements="72" coveredstatements="69" conditionals="33" coveredconditionals="26" methods="20" coveredmethods="20" elements="125" coveredelements="115" complexity="0" loc="72" ncloc="72" packages="2" files="15" classes="15"/>
     <package name="lib">
       <metrics statements="28" coveredstatements="28" conditionals="16" coveredconditionals="12" methods="8" coveredmethods="8"/>
       <file name="forEach.js" path="/Users/zoo/codes/js-fs/make-some-lib/lib/forEach.js">
@@ -52,13 +52,21 @@
       </file>
     </package>
     <package name="src">
-      <metrics statements="38" coveredstatements="35" conditionals="15" coveredconditionals="12" methods="8" coveredmethods="8"/>
+      <metrics statements="44" coveredstatements="41" conditionals="17" coveredconditionals="14" methods="12" coveredmethods="12"/>
       <file name="concatAll.js" path="/Users/zoo/codes/js-fs/make-some-lib/src/concatAll.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="curry.js" path="/Users/zoo/codes/js-fs/make-some-lib/src/curry.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
       </file>
       <file name="every.js" path="/Users/zoo/codes/js-fs/make-some-lib/src/every.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
@@ -73,6 +81,10 @@
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="identity.js" path="/Users/zoo/codes/js-fs/make-some-lib/src/identity.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
       </file>
       <file name="map.js" path="/Users/zoo/codes/js-fs/make-some-lib/src/map.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

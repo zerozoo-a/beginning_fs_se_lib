@@ -50,10 +50,17 @@
  * const b = a(2);
  * console.log("b", b);
  * */
-export function curry(func) {
+export function curry(f) {
+  if (typeof f !== "function") {
+    throw new Error("No function provided");
+  }
+  if (f.length === 0) {
+    throw new Error("arguments is no needed");
+  }
+
   return function curried(...args) {
-    if (args.length >= func.length) {
-      return func.apply(this, args);
+    if (args.length >= f.length) {
+      return f.apply(this, args);
     } else {
       return function (...args2) {
         return curried.apply(this, args.concat(args2));

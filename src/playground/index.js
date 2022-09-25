@@ -1,13 +1,7 @@
-import { every } from "../Lazy/every.js";
-import { some } from "../some.js";
+import { objectAssign } from "../objectAssign";
 
-const a = [1, 2, 3];
-const b = [true, false, false, true];
-const predicate = (a) => a > 0;
+const a = { greet: "hello" };
+const b = { say: "yes!" };
 
-const res = every(b, (a) => true && a);
-const rr = [...res];
-console.log("rr", rr);
-
-const aa = some(b, (a) => a);
-console.log("aa", aa);
+const ab = objectAssign(a, b);
+console.log("ab", ab);

@@ -19,6 +19,3 @@ export function zip(leftArray, rightArray, f) {
   }
   return result;
 }
-
-const a = zip([1, 2, 3], [4, 5, 6], (a, b) => a + b);
-console.log("aaa", a);

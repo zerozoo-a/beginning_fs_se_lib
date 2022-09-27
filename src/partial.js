@@ -18,16 +18,14 @@ export function partial(f, ...partialArgs) {
 
   return function (...fullArguments) {
     let arg = 0;
+    let argsCopy = [...partialArgs];
+
     for (let i = 0; i < args.length && arg < fullArguments.length; i++) {
       if (args[i] === undefined) {
-        args[i] = fullArguments[arg++];
+        argsCopy[i] = fullArguments[arg++];
       }
     }
-    return f.apply(null, args);
+
+    return f.apply(null, argsCopy);
   };
 }
-
-const a = partial(setTimeout, undefined, 1000);
-a(() => {
-  console.log("hola!");
-});

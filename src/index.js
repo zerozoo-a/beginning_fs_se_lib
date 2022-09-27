@@ -1,19 +1,37 @@
-const http = require('http');
-const options = {
-  host: '127.0.0.1',
-  path:'/',
-  port:'8081',
-  method:"POST"
-}
-// Create a local server to receive data from
-const server = http.createServer();
-
-// Listen to the request event
-server.on('request', (request, res) => {
-  res.writeHead(200, { 'Content-Type': 'application/json' });
-  res.end(JSON.stringify({
-    data: 'Hello World!'
-  }));
-});
-
-server.listen(8000);
+import { curry } from "./curry";
+import { concatAll } from "./concatAll";
+import { partial } from "./partial";
+import { zip } from "./zip";
+import { identity } from "./identity";
+import { every } from "./every";
+import { reduce } from "./reduce";
+import { take } from "./Lazy/take";
+import { times } from "./times";
+import { filter } from "./filter";
+import { objectAssign } from "./objectAssign";
+import { factorial } from "./memoize";
+import { memoize } from "./memoize";
+import { unary } from "./unary";
+import { unless } from "./unless";
+import { forEach } from "./forEach";
+import { forEachObject } from "./forEachObject";
+const f = {
+  curry,
+  concatAll,
+  forEach,
+  partial,
+  zip,
+  identity,
+  every,
+  reduce,
+  take,
+  times,
+  filter,
+  objectAssign,
+  factorial,
+  memoize,
+  unary,
+  unless,
+  forEachObject,
+};
+export { f };

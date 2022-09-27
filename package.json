@@ -2,7 +2,8 @@
   "name": "make-some-lib",
   "scripts": {
     "babel": "./node_modules/.bin/babel src --out-dir lib",
-    "test": "jest"
+    "test": "jest",
+    "p": "bun run src/playground/index.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",

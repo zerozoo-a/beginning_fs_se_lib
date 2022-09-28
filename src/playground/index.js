@@ -2,12 +2,13 @@ import { objectAssign } from "../objectAssign";
 import { partial } from "../partial";
 import { f } from "../index";
 
-let obj = { foo: "bar", bar: "foo" };
-const partial_json = f.partial(JSON.stringify, undefined, null, 2);
+// n이 5 이상이고 foo만 가져오시오. // expect: [ "bar_6", "bar_7", "bar_8", "bar_9" ]
 
-const res2 = partial_json(obj);
-const res3 = partial_json({ bar: "foo", foo: "bar" });
-const res4 = partial_json({ ab: "c", de: "f" });
-console.log("res2 >", res2);
-console.log("res3 >", res3);
-console.log("res4 >", res4);
+const objFact = (n) => ({ foo: `bar_${n}`, bar: `foo_${n}`, n: n });
+const a = f.timesReturn(10, objFact);
+console.log("a?", a);
+
+const compA = f.partial(f.filter, undefined, (obj) => obj.n > 5);
+const compB = f.partial(f.map, undefined, (obj) => obj.foo);
+const res = f.compose(compB, compA)(a);
+// console.log("res ?", res); // [ "bar_6", "bar_7", "bar_8", "bar_9" ]

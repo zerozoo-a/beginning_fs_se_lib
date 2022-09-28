@@ -6,7 +6,7 @@ import { identity } from "./identity";
 import { every } from "./every";
 import { reduce } from "./reduce";
 import { take } from "./Lazy/take";
-import { times } from "./times";
+import { times, timesReturn } from "./times";
 import { filter } from "./filter";
 import { objectAssign } from "./objectAssign";
 import { factorial } from "./memoize";
@@ -15,9 +15,14 @@ import { unary } from "./unary";
 import { unless } from "./unless";
 import { forEach } from "./forEach";
 import { forEachObject } from "./forEachObject";
+import { compose } from "./compose";
+import { map } from "./map";
+
 const f = {
+  map,
   curry,
   concatAll,
+  compose,
   forEach,
   partial,
   zip,
@@ -26,6 +31,7 @@ const f = {
   reduce,
   take,
   times,
+  timesReturn,
   filter,
   objectAssign,
   factorial,

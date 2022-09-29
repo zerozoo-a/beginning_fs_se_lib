@@ -17,14 +17,22 @@ import { forEach } from "./forEach";
 import { forEachObject } from "./forEachObject";
 import { compose } from "./compose";
 import { map } from "./map";
+import { pipe } from "./pipe";
+import { go } from "./go";
+import { pipe1 } from "./pipe1";
+import { Container } from "./container";
 
 const f = {
   map,
   curry,
   concatAll,
   compose,
+  Container,
   forEach,
   partial,
+  pipe,
+  pipe1,
+  go,
   zip,
   identity,
   every,

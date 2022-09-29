@@ -1,19 +1,12 @@
-export function reduce(array, f, initialValue) {
-  let accumulator;
-
-  initialValue != undefined
-    ? (accumulator = initialValue)
-    : (accumulator = array[0]);
-
-  if (initialValue === undefined) {
-    for (let i = 1; i < array.length; i++) {
-      accumulator = f(accumulator, array[i]);
-    }
-  } else {
-    for (const a of array) {
-      accumulator = f(accumulator, a);
-    }
+export function reduce(f, acc, iter) {
+  if (!iter) {
+    iter = acc[Symbol.iterator]();
+    acc = iter.next().value;
   }
 
-  return accumulator;
+  for (const a of iter) {
+    acc = f(acc, a);
+  }
+
+  return acc;
 }

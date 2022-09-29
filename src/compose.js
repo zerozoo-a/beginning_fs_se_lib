@@ -14,6 +14,6 @@ export function compose(...fns) {
     if (arguments.length !== 1) {
       throw new Error("arguments can only available one argument");
     }
-    return reduce(fns.reverse(), (acc, f) => f(acc), v);
+    return reduce((acc, f) => f(acc), v, fns.reverse());
   };
 }

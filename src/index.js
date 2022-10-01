@@ -20,14 +20,18 @@ import { map } from "./map";
 import { pipe } from "./pipe";
 import { go } from "./go";
 import { pipe1 } from "./pipe1";
-import { Container } from "./container";
+import { Container } from "./Container";
+import { Maybe } from "./Maybe";
+import { Either } from "./Either";
 
 const f = {
+  Either,
   map,
   curry,
   concatAll,
   compose,
   Container,
+  Maybe,
   forEach,
   partial,
   pipe,

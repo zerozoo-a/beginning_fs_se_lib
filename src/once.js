@@ -8,7 +8,7 @@
 export function once(f) {
   let done = false;
 
-  return function () {
-    return done ? undefined : ((done = true), f.apply(this, arguments));
+  return function (...args) {
+    return done ? undefined : ((done = true), f(...args));
   };
 }

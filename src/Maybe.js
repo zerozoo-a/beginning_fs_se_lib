@@ -31,3 +31,7 @@ Maybe.prototype.map = function (f) {
 Maybe.prototype.join = function () {
   return this.isNothing() ? Maybe.of(null) : this.value;
 };
+
+Maybe.prototype.chain = function (f) {
+  return this.map(f).join();
+};

@@ -51,4 +51,19 @@ describe("Maybe is Functor", () => {
     const a9 = Maybe.of("A");
     expect(() => a9.join().join()).toThrow();
   });
+
+  test("Maybe.join example", () => {
+    const ex = Maybe.of(Maybe.of(3));
+    expect(
+      ex
+        .join()
+        .map((a) => a + 1)
+        .join()
+    ).toBe(4);
+  });
+
+  test("Maybe 객체의 chain Method는 함수를 받아 mapping 후 값을 반환한다.", () => {
+    const c = Maybe.of(1).chain((a) => a + 1);
+    expect(c).toBe(2);
+  });
 });

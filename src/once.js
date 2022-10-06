@@ -19,3 +19,10 @@ export function once(f) {
     return done ? undefined : ((done = true), f(...args));
   };
 }
+
+function once1(f) {
+  return function (...args) {
+    f && f(...args);
+    f = null;
+  };
+}

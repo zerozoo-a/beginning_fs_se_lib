@@ -1,11 +1,14 @@
-import { once } from "../lib/once";
-test("if function has been executed ", () => {
-  const fn = jest
-    .fn()
-    .mockImplementationOnce(() => "1")
-    .mockImplementationOnce(() => "2");
-  const result = once(fn);
+import { once } from "../src/once";
 
-  expect(result()).toBe("1");
-  expect(result()).toBe(undefined);
+describe("once", () => {
+  test("function should work only once", () => {
+    const fn = jest
+      .fn()
+      .mockImplementationOnce(() => "1")
+      .mockImplementationOnce(() => "2");
+    const result = once(fn);
+
+    expect(result()).toBe("1");
+    expect(result()).toBe(undefined);
+  });
 });
